@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Tamakan Test</string>
+    <string name="nav_header_title">Tamakan Information Technology</string>
+    <string name="add_meeting">Add Meeting</string>
+    <string name="press_again_to_exit">press again to exit</string>
+    <string name="no_data_found">No Data Found</string>
+
+    <string name="client_name">Client Name</string>
+    <string name="company_name">Company Name</string>
+    <string name="date">Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="description">Description</string>
+    <string name="room_id">Room Id</string>
+    <string name="user_id">User Id</string>
+    <string name="updated_at">Updated At</string>
+    <string name="created_at">Created At</string>
+
+    <string name="btn_add_meeting">Add Meeting</string>
+    <string name="btn_update_meeting">Update</string>
+    <string name="btn_delete_meeting">Delete</string>
+    <string name="field_empty_error_message_common">This field can not be empty</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/meetingDataListFragment">
+
+
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.example.tamakantest.ui.home_meeting.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+    <fragment
+        android:id="@+id/meetingDataListFragment"
+        android:name="com.example.tamakantest.ui.home_meeting.meeting_data_list.MeetingDataListFragment"
+        android:label="Meeting Data List"
+        tools:layout="@layout/fragment_meeting_data_list" >
+        <action
+            android:id="@+id/action_meetingDataListFragment_to_updateOrDeleteMeetingFragment"
+            app:destination="@id/updateOrDeleteMeetingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMeetingFragment"
+        android:name="com.example.tamakantest.ui.home_meeting.add_meeting.AddMeetingFragment"
+        android:label="Add Meeting"
+        tools:layout="@layout/fragment_add_meeting" />
+    <fragment
+        android:id="@+id/updateOrDeleteMeetingFragment"
+        android:name="com.example.tamakantest.ui.home_meeting.update_delete_meeting.UpdateOrDeleteMeetingFragment"
+        android:label="Update Or Delete Meeting"
+        tools:layout="@layout/fragment_update_or_delete_meeting"
+        >
+        <action
+            android:id="@+id/action_updateOrDeleteMeetingFragment_to_meetingDataListFragment"
+            app:destination="@id/meetingDataListFragment" />
+    </fragment>
+
+
+
+</navigation>

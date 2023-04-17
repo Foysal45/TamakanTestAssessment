@@ -1,0 +1,25 @@
+buildscript {
+    ext.kotlin_version = '1.7.20'
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+//The clean task deletes the build directory of the project, removing all previously generated build artifacts. This ensures that the next build will start from a clean slate, with no leftover files from previous builds.
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
